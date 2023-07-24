@@ -1,6 +1,7 @@
 package rocks.zipcode.assessment2.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -10,9 +11,10 @@ public class Inventory {
     /**
      * @param strings list of strings to add / remove / fetch from
      */
-    List<String> inventory = new ArrayList<>();
+   HashMap<String, ArrayList<String>> inventory;
+   String name;
+
     public Inventory(List<String> strings) {
-        inventory = strings;
 
     }
 
@@ -27,6 +29,7 @@ public class Inventory {
      * @param item - increment the number of this item in stock by 1
      */
     public void addItemToInventory(String item) {
+
         return;
     }
 
