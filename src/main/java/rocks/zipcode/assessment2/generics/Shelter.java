@@ -12,10 +12,10 @@ import rocks.zipcode.assessment2.generics.ageable.Ageable;
  */
 public class Shelter<Thing1 extends Ageable> {
 
-    Thing1 x;
+    Thing1 element;
 
-    Shelter<Thing1> shelter = new Shelter<>();
     public Shelter() {
+
         throw new NullPointerException();
     }
 
@@ -46,10 +46,10 @@ public class Shelter<Thing1 extends Ageable> {
     }
 
     public Thing1 getX() {
-        return x;
+        return element;
     }
 
     public void setX(Thing1 x) {
-        this.x = x;
+        this.element = x;
     }
 }
