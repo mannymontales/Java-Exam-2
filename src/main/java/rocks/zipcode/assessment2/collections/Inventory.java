@@ -1,5 +1,6 @@
 package rocks.zipcode.assessment2.collections;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,7 +10,9 @@ public class Inventory {
     /**
      * @param strings list of strings to add / remove / fetch from
      */
+    List<String> inventory = new ArrayList<>();
     public Inventory(List<String> strings) {
+        inventory = strings;
 
     }
 
